@@ -1,0 +1,16 @@
+{
+  "_lisez_moi": "Pour chaque cible, mets le numéro (ID) du segment Brevo correspondant. 0 = pas encore créé : la cible est ignorée et le script le signale.",
+  "PEA": 1,
+  "PEA-PME": 2,
+  "Assurance-vie": 3,
+  "PER": 4,
+  "Compte-titres": 5,
+  "Livrets": 6,
+  "Epargne salariale": 7,
+  "Crypto": 8,
+  "Location meublee": 9,
+  "Immobilier locatif": 10,
+  "Transmission": 11,
+  "Retraite": 12,
+  "Tous": 0
+}
