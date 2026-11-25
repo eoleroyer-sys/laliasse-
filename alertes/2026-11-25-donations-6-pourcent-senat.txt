@@ -1,0 +1,13 @@
+# Une alerte = un fichier comme celui-ci. Une ligne par champ : "nom: valeur".
+# Les lignes qui commencent par # sont ignorées.
+titre: Dons d'argent aux enfants taxés à 6 % : le Sénat étend la mesure à toute l'année 2027
+date: 2026-11-25
+reference: Projet de loi de finances 2027, article 4 (amendements n° I-6, I-7, I-8 et I-220)
+statut: adopte
+cibles: Transmission
+apercu: Le Sénat a voté un taux unique de 6 % sur certains dons d'argent faits en 2027 aux enfants et petits-enfants de moins de 50 ans. Ce n'est pas encore définitif.
+propose: Le 23 novembre 2026, le Sénat a adopté l'article 4 du budget 2027, modifié. Les dons de sommes d'argent faits en 2027 à un enfant, petit-enfant ou arrière-petit-enfant majeur (ou émancipé) et de moins de 50 ans (à défaut de descendants, à un neveu ou une nièce) seraient taxés au taux unique de 6 %, dans la limite de 100 000 € par donateur et par bénéficiaire. Le taux serait de 5 % si le bénéficiaire reverse au moins 1,1 % de la somme à certains organismes désignés par le texte (article 200, 1 ter, du code général des impôts). Le gouvernement limitait la mesure au 1er semestre 2027 : le Sénat l'étend jusqu'au 31 décembre 2027. Il ajoute un plafond de 200 000 € reçus par bénéficiaire et réserve la mesure aux donateurs de moins de 80 ans. L'exonération des dons d'argent familiaux serait aussi portée de 31 865 € à 50 000 € pour les dons faits en 2027, dans la limite de 200 000 € par bénéficiaire.
+concerne: Oui si vous envisagez de donner de l'argent en 2027 à un enfant, petit-enfant ou arrière-petit-enfant majeur ou émancipé (à défaut de descendants, à un neveu ou une nièce), ou si vous pouvez en recevoir. Le taux de 6 % ne vise que les bénéficiaires de moins de 50 ans ; l'exonération portée à 50 000 € n'a pas cette limite d'âge. Dans les deux cas, le donateur doit avoir moins de 80 ans. Non pour les dons faits en 2026, ni pour les dons de biens autres que des sommes d'argent (immobilier, titres). Rien n'est applicable tant que le budget n'est pas définitivement voté et publié.
+etape: Adopté par le Sénat seulement, dans sa lecture du budget. L'Assemblée nationale avait rejeté le projet de budget. Au Sénat, le vote sur la première partie du budget, qui contient cet article, est prévu le 28 novembre, puis le vote sur l'ensemble le 9 décembre. Le texte final dépendra ensuite de la commission mixte paritaire et des votes finaux.
+source_nom: Sénat, compte rendu de la séance du 23 novembre 2026 (PLF 2027, article 4)
+source_url: https://www.senat.fr/cra/s20261123/s20261123_0.html
