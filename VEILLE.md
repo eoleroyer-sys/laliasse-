@@ -47,3 +47,23 @@ Avant de pousser : `python3 outils/envoyer_alerte.py alertes/FICHIER.txt --aperc
 - Distinguer ce qui est proposé, adopté par une chambre, définitivement voté et en vigueur.
 - Phrases courtes, vocabulaire simple, chiffres exacts avec leur date.
 - Au plus 2 alertes par matin ; s'il n'y a rien de solide, ne rien pousser.
+
+## Relecture avant tout dépôt
+
+Chaque alerte est relue à fond avant le push, par un regard neuf (un sous-agent si possible, qui n'a pas écrit l'alerte) :
+- rouvrir chaque source citée et vérifier chaque chiffre, date, numéro d'article ou d'amendement, résultat de vote ;
+- vérifier le statut (proposé, adopté par une chambre, définitif, en vigueur) et la prochaine étape ;
+- vérifier que « concerne » dit clairement qui est touché et qui ne l'est pas ;
+- chasser tout conseil déguisé, toute formule vague, toute faute ;
+- vérifier que les cibles correspondent bien aux placements touchés.
+Corriger, puis relire encore si un point a bougé. Mieux vaut ne rien envoyer qu'une alerte fausse.
+
+## Envoi aux inscrits (seulement après le « Envoyer » d'Eole)
+
+1. Le push de alertes/FICHIER.txt envoie le test à Eole (automatique).
+2. Demander à Eole, dans la conversation, s'il faut envoyer (choix : Envoyer / Corriger / Ne pas envoyer).
+3. S'il répond « Envoyer » : créer envois/FICHIER.txt dont la première ligne est exactement le nom du fichier
+   d'alerte (ex. 2026-11-26-flat-tax-senat.txt), le committer SEUL (jamais dans le même commit qu'une alerte)
+   et le pousser sur main. GitHub Actions envoie alors l'alerte aux segments concernés.
+4. Vérifier le résultat avec `gh run list -R eoleroyer-sys/laliasse- -L 3` et le dire à Eole.
+Sans réponse explicite « Envoyer » d'Eole, ne jamais créer de fichier dans envois/.

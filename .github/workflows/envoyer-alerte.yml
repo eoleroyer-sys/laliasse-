@@ -1,7 +1,9 @@
 # Envoi d'une alerte La Liasse par Brevo.
 #
-# Automatique : chaque nouveau fichier déposé dans alertes/ part en TEST
-#   vers EMAIL_TEST (Eole), jamais vers les inscrits.
+# Automatique :
+#   - chaque nouveau fichier déposé dans alertes/ part en TEST vers EMAIL_TEST (Eole) ;
+#   - chaque fichier déposé dans envois/ (contenant le nom d'une alerte) déclenche
+#     l'ENVOI de cette alerte aux inscrits. Ce dépôt n'est fait qu'après le « Envoyer » d'Eole.
 # À la main : onglet Actions › « Envoyer une alerte » › Run workflow
 #   fichier = nom du fichier dans alertes/ (ex. 2026-11-12-epargne-oubliee.txt)
 #   mode    = test (à toi seulement) ou envoyer (aux inscrits concernés)
@@ -23,7 +25,7 @@ on:
         options: [test, envoyer]
   push:
     branches: [main]
-    paths: ["alertes/**.txt"]
+    paths: ["alertes/**.txt", "envois/**.txt"]
 
 jobs:
   envoyer:
@@ -60,3 +62,19 @@ jobs:
             echo "== $f"
             python3 outils/envoyer_alerte.py "$f" --test
           done < nouvelles.txt
+
+      # Feu vert d'Eole : un fichier envois/XXX.txt contient le nom de l'alerte à envoyer.
+      - name: Envoyer les alertes validées
+        if: github.event_name == 'push'
+        env:
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          EMAIL_TEST: ${{ secrets.EMAIL_TEST }}
+        run: |
+          git diff --name-only --diff-filter=A HEAD~1 HEAD -- 'envois/*.txt' > validees.txt || true
+          if [ ! -s validees.txt ]; then echo "Aucun envoi validé."; exit 0; fi
+          while read -r v; do
+            nom=$(head -n 1 "$v" | tr -d '[:space:]')
+            if [ ! -f "alertes/$nom" ]; then echo "ERREUR : alertes/$nom introuvable (dans $v)"; exit 1; fi
+            echo "== envoi de alertes/$nom"
+            python3 outils/envoyer_alerte.py "alertes/$nom" --envoyer
+          done < validees.txt
