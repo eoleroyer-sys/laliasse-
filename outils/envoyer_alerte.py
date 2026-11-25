@@ -108,7 +108,7 @@ def fabriquer_html(a):
     return page
 
 
-def appel(methode, chemin, corps=None):
+def appel(methode, chemin, corps=None, vide_ok=False):
     cle = os.environ.get("BREVO_API_KEY")
     if not cle:
         stop("variable BREVO_API_KEY absente")
@@ -120,7 +120,10 @@ def appel(methode, chemin, corps=None):
             brut = r.read()
             return r.status, (json.loads(brut) if brut else None)
     except urllib.error.HTTPError as err:
-        stop(f"Brevo a répondu {err.code} sur {chemin} : {err.read().decode(errors='replace')}")
+        texte = err.read().decode(errors="replace")
+        if vide_ok and err.code == 400 and "no contacts" in texte:
+            return err.code, None
+        stop(f"Brevo a répondu {err.code} sur {chemin} : {texte}")
 
 
 def main():
@@ -161,9 +164,13 @@ def main():
         "replyTo": expediteur["email"],
         "htmlContent": page,
     }
-    if ids:
+    # En test, la campagne n'a pas besoin de destinataires : elle part seulement à EMAIL_TEST.
+    if args.envoyer:
         corps["recipients"] = {"segmentIds": ids}
-    _, cree = appel("POST", "/emailCampaigns", corps)
+    _, cree = appel("POST", "/emailCampaigns", corps, vide_ok=args.envoyer)
+    if cree is None:
+        print("Personne n'est encore inscrit dans les segments", ids, ": rien n'est envoyé.")
+        return
     cid = cree["id"]
     print("Campagne Brevo créée :", cid)
 
