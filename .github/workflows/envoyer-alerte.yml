@@ -1,9 +1,12 @@
 # Envoi d'une alerte La Liasse par Brevo.
-# GitHub › onglet Actions › « Envoyer une alerte » › Run workflow :
+#
+# Automatique : chaque nouveau fichier déposé dans alertes/ part en TEST
+#   vers EMAIL_TEST (Eole), jamais vers les inscrits.
+# À la main : onglet Actions › « Envoyer une alerte » › Run workflow
 #   fichier = nom du fichier dans alertes/ (ex. 2026-11-12-epargne-oubliee.txt)
 #   mode    = test (à toi seulement) ou envoyer (aux inscrits concernés)
-# Secrets à créer dans Settings › Secrets and variables › Actions :
-#   BREVO_API_KEY, EMAIL_TEST
+#
+# Secrets (Settings › Secrets and variables › Actions) : BREVO_API_KEY, EMAIL_TEST
 name: Envoyer une alerte
 
 on:
@@ -18,19 +21,42 @@ on:
         default: test
         type: choice
         options: [test, envoyer]
+  push:
+    branches: [main]
+    paths: ["alertes/**.txt"]
 
 jobs:
   envoyer:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      # Lancement à la main : le fichier et le mode choisis.
       - name: Vérifier l'alerte (aperçu)
+        if: github.event_name == 'workflow_dispatch'
         run: python3 outils/envoyer_alerte.py "alertes/${{ inputs.fichier }}" --apercu
       - name: Envoyer par Brevo
+        if: github.event_name == 'workflow_dispatch'
         env:
           BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
           EMAIL_TEST: ${{ secrets.EMAIL_TEST }}
         run: python3 outils/envoyer_alerte.py "alertes/${{ inputs.fichier }}" --${{ inputs.mode }}
+
+      # Nouveau fichier déposé : test seulement, jamais d'envoi aux inscrits.
+      - name: Tester les alertes déposées
+        if: github.event_name == 'push'
+        env:
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          EMAIL_TEST: ${{ secrets.EMAIL_TEST }}
+        run: |
+          git diff --name-only --diff-filter=AM HEAD~1 HEAD -- 'alertes/*.txt' > nouvelles.txt || true
+          if [ ! -s nouvelles.txt ]; then echo "Aucune alerte nouvelle ou modifiée."; exit 0; fi
+          while read -r f; do
+            echo "== $f"
+            python3 outils/envoyer_alerte.py "$f" --test
+          done < nouvelles.txt
