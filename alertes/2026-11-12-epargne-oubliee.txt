@@ -1,0 +1,15 @@
+# Une alerte = un fichier comme celui-ci. Une ligne par champ : "nom: valeur".
+# Les lignes qui commencent par # sont ignorées.
+titre: Épargne oubliée : le Sénat veut passer le prélèvement de 17 % à 35 %
+date: 2026-11-12
+reference: Projet de loi de finances 2027, article 23
+statut: propose
+cibles: Assurance-vie, Livrets
+apercu: Vos comptes actifs ne sont pas concernés. Seul l'argent déjà transféré à la Caisse des dépôts l'est.
+propose: La commission des finances du Sénat relève de 17 % à 35 % le prélèvement sur l'argent oublié (comptes inactifs, assurances-vie non réclamées) déjà transféré à la Caisse des dépôts.
+concerne: Pas pour vos comptes et contrats actifs. Seulement si de l'argent à votre nom, ou à celui d'un proche décédé, dort à la Caisse des dépôts. En cas de réclamation, la somme prélevée serait rendue avec intérêts.
+verifier: Une recherche gratuite sur Ciclade indique si de l'argent vous attend.
+verifier_url: https://ciclade.caissedesdepots.fr
+etape: Vote en séance au Sénat, puis vote final attendu fin décembre.
+source_nom: Commission des finances du Sénat, 12 novembre 2026
+source_url: https://www.senat.fr/dossierleg/pjlf2027.html
