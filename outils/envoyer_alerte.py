@@ -160,7 +160,6 @@ def main():
         "sender": expediteur,
         "replyTo": expediteur["email"],
         "htmlContent": page,
-        "tag": "alerte",
     }
     if ids:
         corps["recipients"] = {"segmentIds": ids}
