@@ -1,0 +1,12 @@
+# Alerte de test (sujet en vigueur depuis janvier 2026), rédigée le 25 novembre 2026.
+titre: Crypto : vos plateformes transmettent vos opérations 2026 au fisc dès 2027
+date: 2026-11-25
+reference: Directive européenne DAC8 (UE 2023/2226), transposée par la loi de finances pour 2025
+statut: en_vigueur
+cibles: Crypto
+apercu: Depuis le 1er janvier 2026, les plateformes crypto enregistrent vos opérations pour le fisc. La première transmission aura lieu en 2027.
+propose: Depuis le 1er janvier 2026, les plateformes de cryptoactifs établies dans l'Union européenne collectent l'identité de leurs clients et le détail de leurs opérations (achats, ventes, échanges, transferts). Elles transmettront ces données à l'administration fiscale chaque année. La première transmission, en 2027, portera sur toutes les opérations réalisées en 2026.
+concerne: Oui si vous détenez des cryptoactifs sur une plateforme agréée en France ou dans l'Union européenne. L'administration pourra comparer ces données avec votre déclaration de revenus. Les règles d'imposition des plus-values ne changent pas : c'est le contrôle qui devient automatique.
+etape: Déjà en vigueur. Les plateformes françaises déposeront leur première déclaration au plus tard le 15 juin 2027 ; les autres pays de l'Union transmettront leurs données d'ici le 30 septembre 2027.
+source_nom: Directive (UE) 2023/2226 du Conseil du 17 octobre 2023 (DAC8), EUR-Lex
+source_url: https://eur-lex.europa.eu/eli/dir/2023/2226/oj
