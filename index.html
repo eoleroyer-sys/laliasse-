@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Liasse : ce que le budget 2027 change pour votre épargne</title>
+<meta name="description" content="Cochez ce que vous détenez (PEA, assurance-vie, PER, livrets) et voyez ce que les lois de 2026 et le budget 2027 changent pour vous. Puis recevez une alerte quand ça bouge.">
+<link rel="canonical" href="https://laliasse.fr/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="La Liasse">
+<meta property="og:title" content="La Liasse : ce que le budget 2027 change pour votre épargne">
+<meta property="og:description" content="Cochez ce que vous détenez (PEA, assurance-vie, PER, livrets) et voyez ce que les lois de 2026 et le budget 2027 changent pour vous. Puis recevez une alerte quand ça bouge.">
+<meta property="og:url" content="https://laliasse.fr/">
+<meta property="og:image" content="https://laliasse.fr/apercu.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0E4A3C">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.replace("no-js","js")</script>
+<script src="site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<nav class="bar" aria-label="Navigation principale">
+  <div class="bar-in lg g-dark">
+    <a class="logo" href="./">La Liasse</a>
+    <div class="tabs">
+      <a href="./" aria-current="page">Accueil</a>
+      <a href="budget-2027.html">Budget 2027</a>
+      <a href="calendrier.html">Calendrier</a>
+      <a href="alertes.html">Alertes</a>
+      <span class="tab-pill" aria-hidden="true"></span>
+    </div>
+    <a class="btn small lg" href="alertes.html#inscription">S'inscrire</a>
+  </div>
+</nav>
+<header class="hero on-green">
+  <div class="wrap">
+    <h1 id="contenu" data-split>Ce que le budget 2027 change pour votre épargne.</h1>
+    <p class="intro" data-reveal>Cochez ce que vous avez. Voici ce que prévoit le texte examiné au Sénat, et ce qui peut encore bouger d'ici le vote final.</p>
+
+    <div class="tool">
+      <div data-reveal>
+        <h2 id="t-avez">Vous avez…</h2>
+        <div class="toggles" role="group" aria-labelledby="t-avez">
+          <button class="toggle lg g-clear grow" type="button" data-k="pea" aria-pressed="true">Un PEA<span class="tick" aria-hidden="true"></span></button>
+          <button class="toggle lg g-clear grow" type="button" data-k="av" aria-pressed="true">Une assurance-vie<span class="tick" aria-hidden="true"></span></button>
+          <button class="toggle lg g-clear grow" type="button" data-k="per" aria-pressed="false">Un PER<span class="tick" aria-hidden="true"></span></button>
+          <button class="toggle lg g-clear grow" type="button" data-k="cto" aria-pressed="false">Des actions hors PEA<span class="tick" aria-hidden="true"></span></button>
+          <button class="toggle lg g-clear grow" type="button" data-k="livrets" aria-pressed="false">Des comptes et livrets<span class="tick" aria-hidden="true"></span></button>
+          <button class="toggle lg g-clear grow" type="button" data-k="meuble" aria-pressed="false">Un logement loué meublé<span class="tick" aria-hidden="true"></span></button>
+          <button class="toggle lg g-clear grow" type="button" data-k="dons" aria-pressed="false">Un projet de don à vos enfants<span class="tick" aria-hidden="true"></span></button>
+        </div>
+        <p class="count" id="count" aria-live="polite"></p>
+      </div>
+
+      <section class="panel lg g-frost" id="pour-vous" aria-labelledby="t-vous" aria-live="polite" data-reveal>
+        <div class="panel-head">
+          <h2 id="t-vous">Pour vous</h2>
+          <p>Lois en vigueur et texte examiné au Sénat, à jour au 24 novembre 2026</p>
+        </div>
+        <ul class="results">
+          <li data-k="pea">
+            <h3>PEA <span class="status same">Règles inchangées en 2027</span></h3>
+            <p>Depuis le 1er janvier 2026, les prélèvements sociaux sur les gains retirés passent de 17,2 % à 18,6 %. Le projet 2027 ne touche pas au PEA : plafond toujours à 150 000 €.</p>
+            <p class="watch"><b>À surveiller :</b> la hausse du plafond du PEA-PME à 300 000 €, votée par les députés, est tombée avec le rejet du texte à l'Assemblée. Elle peut revenir au Sénat.</p>
+          </li>
+          <li data-k="av">
+            <h3>Assurance-vie <span class="status prop">Proposé, pas encore voté</span></h3>
+            <p>Rien n'a changé en 2026. Pour 2027, l'avantage fiscal serait réservé aux contrats qui respectent trois conditions, dont des versements en argent et non en titres depuis le 1er octobre 2026 (article 6).</p>
+            <p class="watch"><b>Pour qui :</b> surtout les contrats luxembourgeois et les fonds dédiés. Un contrat classique n'est pas remis en cause.</p>
+          </li>
+          <li data-k="per" hidden>
+            <h3>PER <span class="status done">Déjà changé en 2026</span></h3>
+            <p>Trois changements depuis 2026 : prélèvements sociaux à 18,6 % à la sortie, plus de déduction des versements faits à partir de 70 ans, plafonds non utilisés reportables sur 5 ans au lieu de 3. Rien de nouveau dans le projet 2027.</p>
+            <p class="watch"><b>Date à connaître :</b> un versement fait au plus tard le 31 décembre 2026, avant 70 ans, se déduit des revenus 2026 dans la limite de votre plafond.</p>
+          </li>
+          <li data-k="cto" hidden>
+            <h3>Flat tax sur vos dividendes et plus-values <span class="status done">Déjà changé en 2026</span></h3>
+            <p>Elle est passée de 30 % à 31,4 % au 1er janvier 2026, avec la hausse de la CSG. Le projet 2027 la laisse à 31,4 %.</p>
+            <p class="watch"><b>À surveiller :</b> des amendements proposaient 32,8 %, voire 41,4 %. Aucun n'a été retenu à ce stade.</p>
+          </li>
+          <li data-k="livrets" hidden>
+            <h3>Argent oublié sur un compte ou une assurance-vie <span class="status prop">Proposé, pas encore voté</span></h3>
+            <p>Prélèvement exceptionnel de 17 % sur les comptes inactifs et les assurances-vie non réclamées déjà transférés à la Caisse des dépôts (article 23), rendu avec intérêts en cas de réclamation. Vos comptes actifs ne sont pas concernés.</p>
+            <p class="watch"><b>Au Sénat :</b> la commission des finances propose 35 %. Pour vérifier si de l'argent vous attend : <a href="https://ciclade.caissedesdepots.fr" rel="noopener">ciclade.caissedesdepots.fr</a>.</p>
+          </li>
+          <li data-k="meuble" hidden>
+            <h3>Location meublée (LMNP) <span class="status prop">Proposé, pas encore voté</span></h3>
+            <p>L'amortissement déductible serait plafonné à 2,5 % de la valeur du logement et 7 000 € par an et par foyer ; 1,5 % et 5 000 € pour un meublé de tourisme (article 7).</p>
+            <p class="watch"><b>À surveiller :</b> les députés avaient supprimé ce plafond, mais leur vote est tombé. Le Sénat repart du texte du gouvernement.</p>
+          </li>
+          <li data-k="dons" hidden>
+            <h3>Dons d'argent à vos enfants <span class="status prop">Proposé, pas encore voté</span></h3>
+            <p>Du 1er janvier au 30 juin 2027, les dons d'argent à des 18-50 ans seraient exonérés jusqu'à 50 000 €, puis taxés à 6 % (article 4).</p>
+            <p class="watch"><b>Au Sénat :</b> la commission propose jusqu'au 31 décembre 2027 et 200 000 € par bénéficiaire. Un don fait avant la loi suit les règles actuelles.</p>
+          </li>
+        </ul>
+        <p class="empty" id="empty" hidden>Cochez au moins une ligne pour voir ce qui vous concerne.</p>
+        <div class="panel-foot">
+          <p>Ces mesures peuvent encore changer d'ici le vote final, attendu fin décembre.</p>
+          <a class="btn dark lg" href="alertes.html#inscription" id="go">Être prévenu si ça change</a>
+        </div>
+      </section>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="band soft" aria-labelledby="t-plus">
+  <div class="wrap">
+    <h2 class="h-poster" id="t-plus" data-reveal>Tout comprendre, sans jargon.</h2>
+    <div class="links">
+      <a class="card-link lg g-frost" data-tilt data-reveal href="budget-2027.html">
+        <h3>Ce que les lois ont changé pour votre épargne</h3>
+        <p>Flat tax, PEA, assurance-vie, PER, livrets, location meublée, dons : ce qui a déjà changé en 2026, ce que prévoit le budget 2027, et ce qui peut encore bouger.</p>
+        <span class="go">Lire l'article</span>
+      </a>
+      <a class="card-link lg g-frost" data-tilt data-reveal href="calendrier.html">
+        <h3>Où en est le budget, et la suite</h3>
+        <p>Les étapes passées et à venir, les dates qui comptent pour votre épargne, et ce qui se passe si le budget n'est pas voté au 31 décembre.</p>
+        <span class="go">Voir le calendrier</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="t-cta">
+  <div class="wrap">
+    <div class="cta-band lg g-dark on-green" data-reveal>
+      <div>
+        <h2 id="t-cta">Une alerte quand ça bouge. Rien sinon.</h2>
+        <p>Cinq lignes, la source officielle, la date à retenir. Seulement pour ce que vous avez coché.</p>
+      </div>
+      <a class="btn lg" href="alertes.html#inscription">Recevoir les alertes</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<script>
+{
+  const toggles = [...document.querySelectorAll(".toggle")];
+  const items = [...document.querySelectorAll(".results li")];
+  const empty = document.getElementById("empty");
+  const count = document.getElementById("count");
+
+  const render = (changed) => {
+    const on = toggles.filter((t) => t.getAttribute("aria-pressed") === "true").map((t) => t.dataset.k);
+    items.forEach((li) => {
+      const show = on.includes(li.dataset.k);
+      li.hidden = !show;
+      li.classList.toggle("in", show && li.dataset.k === changed);
+    });
+    empty.hidden = on.length > 0;
+    count.textContent = "";
+    if (!on.length) { count.textContent = "Cochez au moins une ligne."; return; }
+    count.append((on.length === 1 ? "1 sujet vous concerne" : on.length + " sujets vous concernent") + " : ");
+    const a = document.createElement("a");
+    a.href = "#pour-vous"; a.textContent = "voir le détail";
+    count.append(a);
+  };
+  toggles.forEach((t) => t.addEventListener("click", () => {
+    t.setAttribute("aria-pressed", t.getAttribute("aria-pressed") === "true" ? "false" : "true");
+    t.classList.remove("jelly"); void t.offsetWidth; t.classList.add("jelly");
+    render(t.dataset.k);
+  }));
+  render();
+
+  /* La sélection suit le visiteur jusqu'au formulaire d'inscription */
+  document.getElementById("go").addEventListener("click", () => {
+    const on = toggles.filter((t) => t.getAttribute("aria-pressed") === "true").map((t) => t.dataset.k);
+    try { sessionStorage.setItem("liasse-selection", JSON.stringify(on)); } catch (e) {}
+  });
+}
+</script>
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <a class="logo" href="./">La Liasse</a>
+      <p>Le budget et les lois qui touchent l'épargne des particuliers, lus pour vous. Information générale, pas un conseil en investissement.</p>
+    </div>
+    <div>
+      <h2>Le site</h2>
+      <ul>
+        <li><a href="./">Accueil</a></li>
+        <li><a href="budget-2027.html">Le budget 2027</a></li>
+        <li><a href="calendrier.html">Calendrier</a></li>
+        <li><a href="alertes.html">Alertes</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Sources officielles</h2>
+      <ul>
+        <li><a href="https://www.senat.fr/dossierleg/pjlf2027.html" rel="noopener">Budget 2027 au Sénat</a></li>
+        <li><a href="https://www.assemblee-nationale.fr/dyn/opendata/PRJLANR5L17B3210.html" rel="noopener">Projet de loi n° 3210</a></li>
+        <li><a href="https://ciclade.caissedesdepots.fr" rel="noopener">Ciclade, l'argent oublié</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Informations</h2>
+      <ul>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+        <li><a href="confidentialite.html">Confidentialité</a></li>
+        <li><a href="mailto:contact@laliasse.fr">contact@laliasse.fr</a></li>
+      </ul>
+    </div>
+    <p class="fine">© 2026 La Liasse. Informations à jour au 24 novembre 2026.</p>
+  </div>
+</footer>
+</body>
+</html>
