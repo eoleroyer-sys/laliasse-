@@ -1,0 +1,13 @@
+# Une alerte = un fichier comme celui-ci. Une ligne par champ : "nom: valeur".
+# Les lignes qui commencent par # sont ignorées.
+titre: Impôt des retraités : le Sénat plafonne l'abattement de 10 % sur les pensions à 1 000 €
+date: 2026-11-25
+reference: Projet de loi de finances 2027, article 3 (sous-amendement n° I-3124)
+statut: adopte
+cibles: Retraite
+apercu: Le Sénat a voté un plafond de 1 000 € pour l'abattement de 10 % sur les pensions, contre 4 439 € aujourd'hui. Ce n'est pas encore définitif.
+propose: Le 24 novembre 2026, le Sénat a adopté par 175 voix contre 161 un plafond de 1 000 € pour l'abattement de 10 % appliqué aux pensions avant le calcul de l'impôt sur le revenu. Le plafond actuel est de 4 439 €. Le gouvernement proposait 3 000 €. La commission des finances voulait supprimer l'abattement : cette suppression n'a pas été adoptée.
+concerne: Oui si votre foyer déclare des pensions de retraite. Avec un plafond à 1 000 €, l'abattement ne suit plus les 10 % dès que les pensions déclarées dépassent 10 000 € par an : la part imposable augmente, et l'impôt peut augmenter. Rien ne change pour les revenus de vos placements.
+etape: Adopté par le Sénat seulement. L'Assemblée nationale avait rejeté le projet de budget. Le texte final dépendra de la suite de la navette (commission mixte paritaire puis votes finaux), attendue en décembre.
+source_nom: Sénat, sous-amendement n° I-3124 au PLF 2027, adopté le 24 novembre 2026
+source_url: https://www.senat.fr/amendements/2026-2027/155/Amdt_I-3124.html
