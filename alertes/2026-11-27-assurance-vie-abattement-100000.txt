@@ -1,0 +1,15 @@
+# Une alerte = un fichier comme celui-ci. Une ligne par champ : "nom: valeur".
+# Les lignes qui commencent par # sont ignorées.
+titre: Assurance-vie : le Sénat abaisse l'abattement au décès de 152 500 € à 100 000 € pour les versements dès 2027
+date: 2026-11-27
+reference: Projet de loi de finances 2027, article additionnel après l'article 6 (amendements identiques n° I-538 rect. et I-1048 rect.)
+statut: adopte
+cibles: Assurance-vie, Transmission
+apercu: Le Sénat a voté une baisse de l'abattement de 152 500 € à 100 000 € par bénéficiaire, pour les primes versées à partir du 1er janvier 2027. Ce n'est pas encore définitif.
+propose: Le 25 novembre 2026, le Sénat a adopté par 178 voix contre 166 deux amendements identiques qui modifient l'article 990 I du code général des impôts. Au décès de l'assuré, chaque bénéficiaire profite aujourd'hui d'un abattement de 152 500 € sur les sommes issues des primes versées avant les 70 ans de l'assuré (le conjoint et le partenaire de Pacs sont exonérés). Il passerait à 100 000 €. Seules les primes versées à partir du 1er janvier 2027 seraient concernées. Les taux de taxation au-delà de l'abattement ne changent pas. La commission des finances et le gouvernement avaient donné un avis défavorable.
+concerne: Oui si vous versez de l'argent sur une assurance-vie à partir de 2027 avant vos 70 ans, ou si vous êtes bénéficiaire d'un contrat alimenté à partir de 2027. Seuls les bénéficiaires qui recevraient plus de 100 000 € au titre de ces versements seraient touchés. Non pour les sommes versées jusqu'au 31 décembre 2026. Non pour le conjoint ou le partenaire de Pacs, qui reste exonéré. Non pour les versements faits après 70 ans, qui relèvent d'une autre règle (abattement global de 30 500 €, tous contrats et bénéficiaires confondus), inchangée. Le texte ne précise pas comment les deux abattements se combineraient pour un bénéficiaire qui recevrait des sommes versées avant et après 2027. Rien n'est applicable tant que le budget n'est pas définitivement voté et publié.
+etape: Adopté par le Sénat seulement, en première lecture. L'Assemblée nationale avait rejeté le projet de budget le 4 novembre 2026. Au Sénat, le vote sur la première partie du budget est prévu le 28 novembre 2026, puis le vote sur l'ensemble le 9 décembre 2026. Le texte final dépendra ensuite de la commission mixte paritaire et des votes finaux ; la mesure peut encore être modifiée ou supprimée.
+source_nom: Sénat, scrutin public n° 170 du 25 novembre 2026 (PLF 2027, amendements n° I-538 rect. et I-1048 rect.)
+source_url: https://www.senat.fr/scrutin-public/2026/scr2026-170.html
+verifier: Le texte de l'amendement adopté
+verifier_url: https://www.senat.fr/amendements/2026-2027/155/Amdt_I-538.html
