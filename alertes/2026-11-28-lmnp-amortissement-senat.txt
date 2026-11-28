@@ -1,0 +1,15 @@
+# Une alerte = un fichier comme celui-ci. Une ligne par champ : "nom: valeur".
+# Les lignes qui commencent par # sont ignorées.
+titre: Location meublée : le Sénat plafonne l'amortissement à 7 000 € par an, sauf pour les locations déjà en cours
+date: 2026-11-28
+reference: Projet de loi de finances 2027, article 7 (amendements identiques n° I-16, I-222, I-1427 rect. bis et I-882 rect. ter)
+statut: adopte
+cibles: Location meublee
+apercu: Le Sénat a voté le plafonnement de l'amortissement en location meublée non professionnelle, mais en exclut les locations commencées au plus tard le 1er octobre 2026. Ce n'est pas encore définitif.
+propose: Le 24 novembre 2026, le Sénat a adopté l'article 7 du budget 2027, modifié. En location meublée non professionnelle au régime réel, l'amortissement du logement déductible serait limité à 2,5 % par an, dans la limite de 7 000 € par an et par foyer fiscal. Pour un meublé de tourisme, la limite serait de 1,5 % et 5 000 € par an. Pour les exercices clos à partir du 1er janvier 2027, la part d'amortissement non déduite ne pourrait plus être reportée sur les années suivantes. Le Sénat a ajouté une exception : ces nouvelles règles ne s'appliqueraient pas aux logements dont la location a débuté au plus tard le 1er octobre 2026, date de présentation du budget, tant que le propriétaire reste le même.
+concerne: Oui si vous louez, ou comptez louer, un logement meublé en location meublée non professionnelle (LMNP) au régime réel, et que la location a débuté après le 1er octobre 2026. Non si la location a débuté au plus tard le 1er octobre 2026 et que vous restez propriétaire : les règles actuelles continueraient de s'appliquer. Si le logement est vendu, le nouveau propriétaire ne garde pas cette exception. Le plafonnement ne s'applique pas à certaines résidences (étudiants, personnes de moins de 30 ans en formation, personnes de plus de 65 ans, établissements médico-sociaux ou de soins de longue durée) ; pour elles, la fin du report de l'amortissement non déduit s'appliquerait quand même, sauf location commencée au plus tard le 1er octobre 2026. Rien n'est applicable tant que le budget n'est pas définitivement voté et publié.
+etape: Adopté par le Sénat seulement, en première lecture. Le projet de budget avait été considéré comme rejeté par l'Assemblée nationale le 4 novembre 2026. L'examen du budget au Sénat est prévu jusqu'au 9 décembre 2026. Le texte final dépendra ensuite de la commission mixte paritaire et des votes finaux ; la mesure peut encore être modifiée ou supprimée.
+source_nom: Sénat, compte rendu analytique de la séance du 24 novembre 2026 (PLF 2027, article 7)
+source_url: https://www.senat.fr/cra/s20261124/s20261124_mono.html
+verifier: Le texte de l'article 7 tel que modifié par le Sénat (document provisoire)
+verifier_url: https://www.senat.fr/petite-loi-ameli/2026-2027/155.html
